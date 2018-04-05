@@ -1,5 +1,10 @@
 {
+    "autoload": {
+        "psr-4": {
+            "":"src/"
+        }
+    },
   "require":{
-    "atk4/ui": "^1.2"
+    "atk4/ui": "*"
   }
 }
