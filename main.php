@@ -4,7 +4,12 @@ require 'vendor/autoload.php';
 $app = new \atk4\ui\App('Работает');
 $app->initLayout('Centered');
 
-$db = new \atk4\data\Persistence_SQL('mysql:host=eu-mm-auto-dub-01-b.cleardb.net;dbname=heroku_d6f5fd68101f5d4;charset=utf8', 'b3484af324fedb','73d52b5043cbe42');
+if (isset($_ENV['con'])) {
+  $db = new \atk4\data\Persistence_SQL($_ENV['con']);
+} else {
+  $db = new \atk4\data\Persistence_SQL();
+}
+
 
 class Love extends \atk4\data\Model {
 public $table = 'artik292';
