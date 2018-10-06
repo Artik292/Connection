@@ -1,4 +1,0 @@
-DB name: heroku_d6f5fd68101f5d4
-Server: eu-mm-auto-dub-01-b.cleardb.net
-Name: b3484af324fedb
-Pas: 73d52b5043cbe42
